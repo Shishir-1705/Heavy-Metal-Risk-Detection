@@ -1,0 +1,6 @@
+{
+  "name": "Soil Heavy Metal Risk Classifier",
+  "description": "An end-to-end machine learning system that classifies agricultural soil heavy metal contamination risk into safe, moderate, or high risk using advanced modeling and Explainable AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

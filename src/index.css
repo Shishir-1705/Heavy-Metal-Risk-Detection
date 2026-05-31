@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,450;0,700;1,450&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom "Natural Tones" Sage/Olive (replacing emerald for natural green accents) */
+  --color-emerald-50: #F7F7F2;
+  --color-emerald-100: #EBEBE3;
+  --color-emerald-200: #D9D9D1;
+  --color-emerald-300: #BDBDA7;
+  --color-emerald-400: #93937D;
+  --color-emerald-500: #5A5A40; /* Custom Sage green primary icon/accent */
+  --color-emerald-600: #4A4A34;
+  --color-emerald-700: #3B3B2A;
+  --color-emerald-750: #2C2C1F;
+  --color-emerald-800: #29291D;
+  --color-emerald-950: #14140F;
+
+  /* Custom "Natural Tones" Sienna/Terracotta (replacing indigo for alerts/highlights) */
+  --color-indigo-50: #FAF5F2;
+  --color-indigo-100: #F2E4DC;
+  --color-indigo-200: #E6C8B8;
+  --color-indigo-300: #D4A58D;
+  --color-indigo-400: #BC7D5C;
+  --color-indigo-500: #A0522D; /* Terracotta Sienna */
+  --color-indigo-600: #85401F;
+  --color-indigo-700: #6B3216;
+  --color-indigo-800: #51240F;
+  --color-indigo-900: #391808;
+
+  /* Warm Sand/Clay Slates mapping */
+  --color-slate-50: #F5F5F0;  /* Base Canvas background */
+  --color-slate-100: #EBEBE3; /* Sidebar background / Lighter clay-sand */
+  --color-slate-200: #D9D9D1; /* Clay border light mode */
+  --color-slate-250: #E2E2D7; /* Sub-container soft fill */
+  --color-slate-300: #C4C4B5;
+  --color-slate-400: #8E8E80; /* Neutral muted text label */
+  --color-slate-450: #78786B;
+  --color-slate-500: #6A6A5C;
+  --color-slate-600: #4F4F44;
+  --color-slate-705: #3E3E34;
+  --color-slate-800: #2D3436; /* Coal/Charcoal heavy text */
+  --color-slate-850: #22292A;
+
+  /* Dark mode backgrounds mapped to a gorgeous Deep Woodland Moss/Charcoal */
+  --color-slate-900: #1D211F;  /* Dark card background */
+  --color-slate-950: #131614;  /* Deep dark forest canvas */
+}
+
+/* Global design adjustments to embody Natural Tones */
+h1, h2, h3, h4, .serif-heading {
+  font-family: var(--font-serif);
+}
+
+/* Custom rounded corners: standard items are rounded-xl (16px) */
+.rounded-xl {
+  border-radius: 1rem !important;
+}
+
+/* Standard cards are rounded-2xl or 3xl, matching 2.0rem/32px matching premium AgriGuard cards */
+.rounded-2xl, .rounded-3xl {
+  border-radius: 1.75rem !important;
+}
+
+/* Base body styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-800);
+}
+
